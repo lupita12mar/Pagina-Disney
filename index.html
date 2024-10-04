@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información sobre Disney, sus películas y parques temáticos.">
+    <title>Disney</title>
+    
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #c5e2f6;
+        }
+
+        header {
+            background-color: #008cc4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .peliculas, .parques {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 300px;
+        }
+
+    </style>
+
+
+
+<style>
+
+        form {
+            background-color: white;
+            padding: 20px;
+            margin: auto;
+            width: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="date"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type="submit"] {
+            background-color: #0c7eff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #005bb5;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<header>
+    <h1>Bienvenidos al Mundo de Disney</h1>
+</header>
+
+<section id="peliculas">
+    <h2>Películas Clásicas de Disney</h2>
+    <div class="peliculas">
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=0otG2sKdA6E">
+            <img src="cenicienta.jpg" alt="Cenicienta"></a>
+            <h3>Cenicienta</h3>
+            <p>Una de las películas más icónicas de Disney, estrenada en 1950.</p>
+        </div>
+
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=i3wBpSTWWU4">
+            <img src="reyleon.jpg" alt="El Rey León"></a>
+            <h3>El Rey León</h3>
+            <p>Una emocionante historia sobre el ciclo de la vida, lanzada en 1994.</p>
+        </div>
+
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=atWGeERH6D4">
+            <img src="blancanieves.jpg" alt="Blanca Nieves y los Siete Enanitos"></a>
+            <h3>Blanca Nieves</h3>
+            <p>El primer largometraje animado de Disney, estrenado en 1937.</p>
+        </div>
+
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=XwfVNGP7El8&list=PL67V8HqrWMjVNdnJYQORICBNkC715JVN9">
+            <img src="bella.jpg" alt="Bella y la Bestia"></a>
+            <h3>Bella y la Bestia</h3>
+            <p>Fue la primera película animada en la historia en ser nominada al Oscar a Mejor Película.</p>
+        </div>
+
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=z6ccmMtvUhQ">
+            <img src="lilo.jpg" alt="lilo y stich"></a>
+            <h3>Lilo y Stich</h3>
+            <p>Los creadores dibujaron los personajes utilizando acuarelas.</p>
+        </div>
+
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=9q1H76H66Os">
+            <img src="buzz.jpg" alt="Toy Story"></a>
+            <h3>Toy Story</h3>
+            <p>Primera película completamente animada por computadora. </p>
+        </div>
+
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=9uaiLbvhhJs">
+            <img src="dumbo.jpg" alt="Dumbo"></a>
+            <h3>Dumbo</h3>
+            <p>Es la película de animación más corta de Disney, con una duración de solo 64 minutos.</p>
+        </div>
+
+        <div class="card">
+            <a href="https://www.youtube.com/watch?v=DPBp5XafZtk">
+            <img src="pais.jpg" alt="Alicia"></a>
+            <h3>Alicia en el Pais de las Maravillas</h3>
+            <p>Recibió muchas críticas, pero con el tiempo se convirtió en un clásico.</p>
+        </div>
+    </div>
+</section>
+
+<section id="parques">
+    <h2>Parques Temáticos de Disney</h2>
+    <div class="parques">
+        <div class="card">
+            <img src="disneyland.jpg" alt="Disneyland">
+            <h3>Disneyland</h3>
+            <p>El primer parque temático de Disney, inaugurado en 1955 en California.</p>
+        </div>
+        <div class="card">
+            <img src="Kingdom.jpg" alt="Magic Kingdom">
+            <h3>Magic Kingdom</h3>
+            <p>Ubicado en Walt Disney World, es uno de los parques más visitados del mundo.</p>
+        </div>
+    </div>
+</section>
+
+<section id="historia">
+    <h2>Historia de Disney</h2>
+    <p>The Walt Disney Company, comúnmente conocida como Disney, nació en 1923 cuando los hermanos Walt y Roy O. Disney fundaron un pequeño estudio de animación en Los Ángeles. Comenzaron creando cortometrajes protagonizados por personajes como Oswald, el conejo afortunado, pero fue en 1928 cuando dieron vida al personaje que cambiaría todo: Mickey Mouse. El debut de Mickey en "Steamboat Willie", uno de los primeros cortometrajes sonoros de la historia, marcó el inicio del éxito global de Disney.
+
+    A lo largo de los años, la compañía expandió su influencia con largometrajes animados como Blanca Nieves y los Siete Enanitos(1937), que fue el primer largometraje de animación en la historia del cine. Esto marcó el inicio de una era dorada para Disney, con películas inolvidables como Cenicienta, El Rey León, La Bella y la Bestia y muchas más.
+
+    Además de las películas, Disney revolucionó el entretenimiento familiar con la creación de parques temáticos. Disneyland, inaugurado en 1955 en California, se convirtió en un lugar donde la magia cobraba vida, y fue seguido por la apertura de Walt Disney World en Florida en 1971, así como otros parques en todo el mundo.
+
+    Desde sus humildes comienzos en un pequeño estudio, Disney se ha convertido en un imperio del entretenimiento que abarca películas, televisión, parques temáticos, música y productos. Aunque Walt Disney falleció en 1966, su visión y legado de crear mundos llenos de fantasía y esperanza siguen inspirando a generaciones enteras.</p>
+</section>
+
+
+
+
+
+<section id="Registro de visita">
+   <h2>Registro de visita</h2>
+    <form id="formularioContacto" method="post" action="procesar_contacto.php">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo">
+
+        <label for="correo">Parque destino:</label>
+        <input type="radio" name="estacion2" value="1">Magic Kingdom<br>
+        <input type="radio" name="estacion2" value="2">Disneyland<br>
+
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" cols="30"></textarea><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+
+    
+    <div id="mensaje-gracias">
+        ¡Gracias por agendar tu visita!, nos vemos pronto.
+    </div>
+
+    
+
+<script>
+    
+    document.getElementById('formularioContacto').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        
+       
+        document.getElementById('mensaje-gracias').style.display = 'block';
+        
+        
+        document.getElementById('formularioContacto').reset();
+    });
+</script>
+
+
+
+
+</body>
+</html>
